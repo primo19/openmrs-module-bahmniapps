@@ -135,10 +135,10 @@ category: Layout - Button
 
 
 
-@mixin button($tcolor: #FFF, $bcolor: #DDD, $font: $text) {
+@mixin button($tcolor: #F9F2F2, $bcolor: #D7FBED, $font: $text) {
   border-radius: 3px;
   background: linear-gradient(to bottom, $tcolor, $bcolor);
-  background-color: $bcolor;
+  // background-color: $bcolor;
   border: $bcolor 1px solid;
   //padding: 8px 20px;
   padding: 6px 20px 7px;

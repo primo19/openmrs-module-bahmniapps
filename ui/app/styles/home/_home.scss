@@ -49,7 +49,7 @@ $total-width: 100%;
   }
   .field-value {
     float: left;
-    font-size: 14px;
+    font-size: 16px;
     input[type="text"], input[type="password"] {
       float: left;
       width: 12.5em;
@@ -172,7 +172,21 @@ body {
   max-width: 100%;
   font-size: 14px;
   font-family: "OpenSans", Arial, sans-serif;
+  background-image: linear-gradient(to bottom left, #FBFBFB , #C5F2FE);
+}
+
+.container {
+  width: 1000px;
+  margin: 0px auto 0;
+  padding: 20px 50px 50px;
+  overflow: hidden;
+  /* background: #f8f8f8; */
+  z-index: 2;
   background-image: linear-gradient(#83B6E9, #96ECBC);
+  border-radius: 25px;
+  height: 500px;
+  text-align: center;
+  margin-top: 88px;
 }
 
 .reg-header {
@@ -307,7 +321,7 @@ body {
       text-align: center;
       font-size: 1.3em;
       &:hover {
-        background: $lightestGray;
+        background: rgba(106, 219, 216, 1);
         border: 1px solid $lightGray;
       }
       i {
@@ -324,7 +338,7 @@ body {
 /******************************************************************************/
 
 .login {
-  height: 300px;
+  height: 400px;
   position: absolute;
   padding-left: 20px;
   // right: 10px;
@@ -399,7 +413,8 @@ body {
     }
     .form-field {
       display: block;
-      margin: 10px 13px 10px 17px;
+      // margin: 10px 13px 10px 17px;
+      margin-top: 10px;
       .field-attribute {
         label {
           text-align: left;
@@ -419,21 +434,23 @@ body {
           padding: 10px 4px 10px 10px;
         }
         select {
-          width: 100%;
+          width: 104%;
           border-radius: 40px;
 
         }
       }
     }
     .form-footer {
-      margin: 10px 13px 10px 17px;
+      // margin: 10px 13px 10px 17px;
+      margin-top: 40px;
       width: 100%;
       button.confirm {
         margin: 2px auto;
         max-width: 100%;
-        width: 100%;
+        width: 55%;
         padding: 10px;
         font-size: 16px;
+        background-image: linear-gradient(to right, #D7FBED, #83B6E9 );
       }
     }
   }
@@ -465,9 +482,10 @@ body {
             min-width: 80%;
             padding: 12px;
             border-radius: 40px;
+            height: 30px;
           }
           select {
-            width: 100%;
+            width: 104%;
           }
         }
       }
@@ -476,7 +494,8 @@ body {
         button.confirm {
           display: inline-block;
           margin: 2px;
-          width: 100%;
+          width: 55%;
+          height: 50px;
           background-image: linear-gradient(to right, #D7FBED, #83B6E9 );
         }
       }
@@ -500,7 +519,7 @@ body {
 }
 .emr-login-text {
   text-align: center;
-  font-size: 22px;
+  font-size: 27px;
   font-weight: 900;
   color: white;
   position: absolute;
@@ -668,7 +687,7 @@ body {
         a {
           width: 130px;
           @include box-shadow-for-section();
-          padding: 10px 10px 20px;
+          padding: 10px 10px 30px;
           i {
             margin-bottom: 5px;
           }
@@ -783,3 +802,11 @@ button.button-Errorlog {
   }
 }
 
+.login-loc{
+  height: 53px !important;
+}
+
+.module-logo {
+  height: 90px;
+  width: 110px;
+}
