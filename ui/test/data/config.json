@@ -223,8 +223,8 @@
         },
         "address": {
           "field": "address2",
-          "placeholder": "Enter ward",
-          "label": "Rural Ward"
+          "placeholder": "Enter Barangay",
+          "label": "Barangay"
         }
       },
       "showMiddleName": true

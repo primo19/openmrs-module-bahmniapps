@@ -4,7 +4,7 @@
 </div> -->
 
 <dev class="clint-logo-wrapper">
-    <img class="client_logo" src="/bahmni/images/hisLogo.png" />
+    <img class="client_logo" src="/bahmni/images/caseNoteLogo.png" />
 </dev>
 
 <div class="container">
@@ -23,11 +23,11 @@
         <form ng-submit="login()" name="loginForm" bm-form autofillable="true">
             <div class="login-body">
                 <div class="note-container">
-                    <div class="note error" ng-if="!isChrome()">
+                    <!-- <div class="note error" ng-if="!isChrome()">
                         <div class="text">
                         {{ 'LOGIN_UNSUPPORTED_BROWSER_KEY'  | translate }}
                         </div>
-                    </div>
+                    </div> -->
                     <div class="note error" ng-show="errorMessageTranslateKey">
                         <div class="text">
                             {{errorMessageTranslateKey | translate}}

@@ -187,6 +187,40 @@ body {
   height: 500px;
   text-align: center;
   margin-top: 88px;
+
+  // @media only screen and (max-width: 600px) {
+  //   width: 250px;
+  //   height: 400px;
+  // } 
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    width: 65%;
+    height: 400px;
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    width: 65%;
+    height: 700px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    width: 65%;
+    height: 450px;   
+  }
+
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    width: 70%;
+    height: 500px;  
+  }
+
+  @media screen and (min-width: 1281px) {
+    width: 80%;
+    height: 600px; 
+  }
+
+  // @media screen and (max-width: 1095px) {
+  //   width: 800px;
+  // }
 }
 
 .reg-header {
@@ -347,6 +381,19 @@ body {
   margin: auto;
   font-size: 0.865em;
   max-width: 500px;
+
+  @media only screen and (max-width: 600px) {
+    height: 170px;
+  } 
+
+  @media only screen and (min-width: 768px) {
+    height: 200px;
+  } 
+
+  @media only screen and (min-width: 992px) {
+    height: 300px;
+  } 
+  
   form {
     border-radius: 0 0 10px 10px;
     // box-shadow: 0 10px 10px -10px $mediumGray;
@@ -432,6 +479,11 @@ body {
           margin: 0px;
           min-width: 10%;
           padding: 10px 4px 10px 10px;
+
+          @media only screen and (max-width: 600px) {
+            border-radius: 40px;
+            height: 30px;
+          } 
         }
         select {
           width: 104%;
@@ -527,6 +579,20 @@ body {
   left: 0;
   width: 100%;
   padding-left: 30px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 20px;
+    top: -40px;
+    width: 80%;
+    line-height: 20px;
+  } 
+
+  @media only screen and (min-width: 768px) {
+    font-size: 25px;
+    top: -45px;
+    width: 85%;
+    line-height: 29px;
+  } 
 }
 .bottom-logos-wrapper {
   @media screen and (min-width: 1025px) {

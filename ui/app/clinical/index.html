@@ -20,6 +20,81 @@
         <!-- build:css clinical.min.css -->
         <link rel="stylesheet" href="../styles/clinical.css"/>
         <!-- endbuild -->
+        <style>
+            #canvas {
+                border: 1px solid;
+                border-color: #699;
+                background-color: white;
+            }
+            
+            .canvas-container {
+                position: relative;
+                max-width: 1298px;
+                min-width: 320px;
+            }
+
+            #toolbar {
+                font-family: OpenSans,Arial,sans-serif;
+                padding: 10px;
+                margin-top: 0;
+                margin-bottom: 0;
+                color: #FFF;
+                font-size: 16px;
+                clear: both;
+                background: #699;
+                position: relative;
+                height: 35px;
+            }
+
+            .radcontrol {
+                width: 30px;
+                height: 30px;
+                background-color: #447575;
+                display: inline-block; 
+                text-align: center;
+                padding: 5px;
+                font-size: 30px;
+                cursor: pointer;
+                user-select: none;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+            }
+
+            #rad {
+                float: left;
+            }
+
+            #colors {
+                float: right;
+            }
+
+            .swatch {
+                width: 30px;
+                height: 30px;
+                border-radius: 15px;
+                box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5), 0px 2px 2px rgba(0, 0, 0, 0.5);
+                display: inline-block;
+                margin-left: 10px;
+            }
+
+            .swatch.active {
+                border: 2px solid white;
+                box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.5);
+            }
+
+            #save {
+                float: right;
+                margin-right: 10px;
+                padding: 10px;
+            }
+
+            #clear-canvas {
+                float: right;
+                margin-right: 10px;
+                padding: 10px;
+            }
+        </style>
 
     </head>
     <body ng-app="consultation" >
